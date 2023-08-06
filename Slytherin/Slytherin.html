@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="src/grass.js"></script>
+</head>
+<body>
+<canvas id="gameCanvas" width="640" height="480"></canvas>
+<script src="Slytherin.js"></script>
+<style>
+    /* Add the following CSS code */
+    #gameCanvas {
+        border: 2px solid grey; /* Set the border width and color */
+    }
+</style>
+<style>
+    /* Add the following CSS code */
+    body {
+        background-color: forestgreen;
+    }
+</style>
+<br>
+<iframe id="gameIframe" src=""></iframe>
+<button onclick="goFullscreen('gameIframe');">Fullscreen</button>
+<script>
+    function goFullscreen(id) {
+        var element = document.getElementById(id);
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.webkitRequestFullscreen) {
+            element.webkitRequestFullscreen();
+        } else if (element.mozRequestFullScreen) {
+            element.mozRequestFullScreen();
+        } else if (element.msRequestFullscreen) {
+            element.msRequestFullscreen();
+        }
+    }
+</script>
+</body>
+</html>
