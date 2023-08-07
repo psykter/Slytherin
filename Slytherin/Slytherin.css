@@ -1,0 +1,18 @@
+/* game-field.css */
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#gameContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+#gameCanvas {
+    background-color: forestgreen;
+    border: 4px solid grey;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
